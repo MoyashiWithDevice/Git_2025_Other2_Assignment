@@ -3,15 +3,18 @@
 	<head>
 	    <meta charset="UTF-8">
 	    <title>Quiz</title>
-		<h2>パンはパンでも食べられないパンは？</h2>
-		<input type="radio" name="フライパン">
-		<input type="radio" name="バターロール">
-		<input type="radio" name="フランスパン">
-		<input type="radio" name="焼きそばパン">
-		<input type="button" onclick="displayanswer()">
-		<p id="answer" style="display:none">正解はみんな大嫌い焼きそばパン！</p>
 	</head>
 	<body>
+		<h2>パンはパンでも食べられないパンは？</h2>
+
+    <label><input type="radio" name="quiz" value="フライパン"> フライパン</label><br>
+    <label><input type="radio" name="quiz" value="バターロール"> バターロール</label><br>
+    <label><input type="radio" name="quiz" value="フランスパン"> フランスパン</label><br>
+    <label><input type="radio" name="quiz" value="焼きそばパン"> 焼きそばパン😭😭</label><br><br>
+
+    <input type="button" value="答えを表示" onclick="displayAnswer()">
+
+    <p id="answer" style="display:none; color: red;">正解はみんな大嫌い焼きそばパン！</p>
 		<script src="Quiz.js"></script>
 	</body>
 </html>
